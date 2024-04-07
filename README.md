@@ -1,3 +1,6 @@
+# Game Preview
+![Game Preview](https://github.com/Vinaykpro/Tic-Tac-Toe-Game_ReactJS/blob/main/preview.gif)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
