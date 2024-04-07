@@ -1,0 +1,160 @@
+* {
+  margin:0;
+  padding:0;
+  font-family: "Fredoka", sans-serif;
+  user-select: none;
+}
+.App {
+  text-align: center;
+}
+
+.Center {
+  text-align: center;
+}
+
+.Bold {
+  font-weight:bold;
+}
+
+.Grid {
+  margin:0.6vw;
+  text-align: center;
+  background-color:#55c653;
+  border:1px solid rgb(56, 218, 97);
+  border-radius:5vw;
+  height:32vw;
+  width:32vw;
+  color: white;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25vw;
+  user-select: none;
+  font-family: "Fredoka", sans-serif;
+  font-weight: 800;
+  font-style: bold;
+}
+
+.Box {
+  height: calc(100vw + 2px);
+  width: 100vw;
+  background-color: #ffffffa3;
+  position: absolute;
+  display: block;
+  border-radius: 5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: 1s white linear;
+  z-index:2;
+}
+
+.BoxLine {
+  height: calc(100vw + 2px);
+  width: 100vw;
+  position: absolute;
+  display: block;
+  border-radius: 5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index:2;
+}
+
+@keyframes white {
+  from {
+    background-color:#ffffff00 ;
+  } to {
+    background-color:#ffffffa3 ;
+  }
+}
+
+/* .Line {
+  border-radius: 10px;
+  position: absolute;
+  height: calc(97vw);
+  width: 6vw;
+  opacity: 0.5;
+  background-color: #ff0000;
+  animation: pop 0.5s alternate;
+} */
+
+.WinnerTitle {
+  z-index: 2;
+  font-size: 20vw;
+  color:black;
+  margin-bottom: 3vw;
+  animation: 1s appear linear;
+}
+
+button {
+  padding: 5vw;
+  padding-top: 3vw;
+  padding-bottom: 3vw;
+  font-family: "Fredoka", sans-serif;
+  font-weight: 700;
+  font-size: 5vw;
+  border-radius: 5vw;
+  border:none;
+  border: 1px solid rgb(177, 255, 180);
+  background-color: #55c653;
+  color: white;
+  z-index: 2;
+  animation: 1s appear linear;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  } to {
+    opacity: 100;
+  }
+}
+
+@keyframes pop {
+  from {
+    transform: ScaleX(0);
+    transform: scaleY(0);
+  } to {
+    transform: scaleX(1);
+    transform: scaleY(1);
+  }
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 1s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
